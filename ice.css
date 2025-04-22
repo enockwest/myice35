@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e4f5f4;
+  color: #333;
+}
+
+.content {
+  width: calc(100% - 220px);
+  padding: 20px;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #ff66b2;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 20px 0;
+}
+
+
+.nav-links li:hover {
+  background-color: aqua;
+  padding: 15px;
+  border-radius: 5px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #ffe3f1;
+}
+
+.hero {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  text-shadow: 2px 2px 5px #c0392b;
+}
+
+section {
+  height: 300px;
+  border-bottom: 2px solid rgb(0, 255, 221);
+  border-radius: 10px;
+  margin: 40px 0;
+  text-align: center;
+  padding: 10px;
+  font-size: x-large;
+}
+section:hover{
+  background-color: #f8d6e7;
+}
+section > h2{
+  text-align: center;
+  padding: 15px;
+}
+section > h2 > ul{
+  list-style-type: square;
+}
+
+.scroll-gallery {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.scroll-gallery img {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px;
+  }
+ 
+}
+
